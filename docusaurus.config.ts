@@ -7,12 +7,10 @@ const config: Config = {
   tagline: 'A Textbook by Panaversity',
   favicon: 'img/favicon.ico',
 
-  // Future flags
   future: {
     v4: true,
   },
 
-  // GitHub Pages config
   url: 'https://mhassan35.github.io',
   baseUrl: '/aibook/',
 
@@ -48,19 +46,44 @@ const config: Config = {
     },
     navbar: {
       title: 'ReSearch of AI',
+      logo: {
+        alt: 'Panaversity Logo',
+        src: 'img/logo.png',
+      },
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Textbook',
+        },
         {
           href: 'https://github.com/mhassan35/ai-book',
           label: 'GitHub',
           position: 'right',
-          className: 'hide-on-mobile', // optional CSS to hide on mobile if needed
         },
       ],
-      hideOnScroll: false,
     },
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Textbook',
+          items: [
+            {
+              label: 'Introduction',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Chapter 1: Foundations',
+              to: '/docs/physical-ai-book/intro/foundations',
+            },
+            {
+              label: 'Chapter 2: ROS 2',
+              to: '/docs/physical-ai-book/chapter2/ros2-architecture',
+            },
+          ],
+        },
         {
           title: 'Community',
           items: [
@@ -69,7 +92,7 @@ const config: Config = {
               href: 'https://www.panaverse.co',
             },
             {
-              label: 'GitHub',
+              label: 'GitHub Repository',
               href: 'https://github.com/mhassan35/ai-book',
             },
           ],
