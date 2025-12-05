@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://muhammad-anas35.github.io',
+  url: 'https://github.com/mhassan35',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/muhammad-anas35/RAGai/tree/main/',
+            'https://github.com/mhassan35/ai-book/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -61,43 +61,45 @@ const config: Config = {
     },
     navbar: {
       title: 'ReSearch of AI',
+      logo: undefined,
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'AI Text BooK',
-        },
-        {
-          href: 'https://github.com/your-github-username/Book_RAG',
+          href: 'https://github.com/mhassan35',
           label: 'GitHub',
           position: 'right',
+          className: '', 
         },
       ],
-    },
+      hideOnScroll: false,
+    },    
     footer: {
-      style: 'light',
+      style: 'dark',
       links: [
         {
-          title: 'Follow Up',
+          title: 'Community',
           items: [
-            {
-              label: 'Introduction',
-              to: '/intro',
-            },
             {
               label: 'Panaverse',
               href: 'https://www.panaverse.co',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com',
+              label: 'GitHUb',
+              href: 'https://github.com/mhassan35',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
             },
           ],
         },
       ],
       copyright: `© ${new Date().getFullYear()} Panaverse.`,
-    },    
+    },  
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

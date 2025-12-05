@@ -336,6 +336,7 @@ img {
 .navbar__link {
   color: rgba(255, 255, 255, 0.95) !important;
   font-weight: 500;
+  display: flex;
   transition: all 0.3s ease;
 }
 
@@ -344,6 +345,9 @@ img {
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
 }
 
+.navbar__toggle {
+  display: none !important;
+}
 .navbar__item {
   color: rgba(255, 255, 255, 0.95);
 }
@@ -365,10 +369,12 @@ img {
 
 /* Footer */
 .footer {
-  padding: 20px 0;
-  background: #f3f4f6 !important;   /* Soft light grey */
+  display: flex;
+  /* padding: 20px 0;
+  background: #111827;
   text-align: center;
-  border-top: 1px solid #e5e7eb;
+  color: #fff;
+  border-top: 1px solid #e5e7eb; */
 }
 
 /* Footer Links (Follow Up buttons) */
@@ -382,7 +388,7 @@ img {
 
 /* Link Styling */
 .footer__links a {
-  color: #374151;
+  color: #fff;
   font-size: 15px;
   text-decoration: none;
   font-weight: 500;
@@ -395,8 +401,11 @@ img {
 /* Copyright Text */
 .footer__bottom {
   font-size: 14px;
-  color: #6b7280;
+  color: #fff;
   margin-top: 5px;
+}
+.footer__col {
+  margin-bottom: 0;
 }
 
 /* SCROLLBAR */
