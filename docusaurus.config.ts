@@ -67,7 +67,6 @@ const config: Config = {
           href: 'https://github.com/mhassan35',
           label: 'GitHub',
           position: 'right',
-          className: '', 
         },
       ],
       hideOnScroll: false,
