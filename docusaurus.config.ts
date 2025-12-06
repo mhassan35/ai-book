@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   url: 'https://mhassan35.github.io',
-  baseUrl: '/aibook/',
+  baseUrl: '/',
 
   organizationName: 'mhassan35',
   projectName: 'ai-book',
