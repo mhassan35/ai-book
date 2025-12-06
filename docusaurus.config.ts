@@ -42,13 +42,17 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+
+    // ✅ ONLY DARK MODE
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
+
     navbar: {
       title: 'ReSearch of AI',
       logo: undefined,
-
       items: [
         {
           type: 'docSidebar',
@@ -77,12 +81,10 @@ const config: Config = {
         },
         {
           title: 'More',
-          items: [
-            { href: 'https://github.com/mhassan35/ai-book', label: 'GitHub Repository' },
-          ],
+          items: [{ href: 'https://github.com/mhassan35/ai-book', label: 'GitHub Repository' }],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Panaverse.`,
+      copyright: `© ${new Date().getFullYear()} ReSearch of AI.`,
     },
 
     prism: {
