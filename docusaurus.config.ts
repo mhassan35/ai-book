@@ -35,6 +35,7 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // No blog added = blog is disabled by default
       } satisfies Preset.Options,
     ],
   ],
@@ -100,10 +101,8 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // Removed: Blog link (it caused broken link)
+            // No blog in project, so must not reference it.
           ],
         },
       ],
