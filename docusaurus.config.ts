@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'ReSearch of AI',
-  tagline: 'A Textbook by Panaversity',
+  tagline: 'A Textbook',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -35,7 +35,7 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        // No blog added = blog is disabled by default
+        blog: false,
       } satisfies Preset.Options,
     ],
   ],
@@ -47,10 +47,8 @@ const config: Config = {
     },
     navbar: {
       title: 'ReSearch of AI',
-      logo: {
-        alt: 'Panaversity Logo',
-        src: 'img/logo.png',
-      },
+      logo: undefined,
+
       items: [
         {
           type: 'docSidebar',
@@ -65,49 +63,28 @@ const config: Config = {
         },
       ],
     },
+
     footer: {
       style: 'dark',
       links: [
         {
           title: 'Textbook',
           items: [
-            {
-              label: 'Introduction',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Chapter 1: Foundations',
-              to: '/docs/physical-ai-book/intro/foundations',
-            },
-            {
-              label: 'Chapter 2: ROS 2',
-              to: '/docs/physical-ai-book/chapter2/ros2-architecture',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Panaverse',
-              href: 'https://www.panaverse.co',
-            },
-            {
-              label: 'GitHub Repository',
-              href: 'https://github.com/mhassan35/ai-book',
-            },
+            { label: 'Introduction', to: '/docs/intro' },
+            { label: 'Chapter 1: Foundations', to: '/docs/physical-ai-book/intro/foundations' },
+            { label: 'Chapter 2: ROS 2', to: '/docs/physical-ai-book/chapter2/ros2-architecture' },
           ],
         },
         {
           title: 'More',
           items: [
-            // Removed: Blog link (it caused broken link)
-            // No blog in project, so must not reference it.
+            { href: 'https://github.com/mhassan35/ai-book', label: 'GitHub Repository' },
           ],
         },
       ],
       copyright: `© ${new Date().getFullYear()} Panaverse.`,
     },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
