@@ -499,3 +499,8 @@ img {
     max-width: 100%;
   }
 }
+@media (max-width: 996px) {
+   .navbar__item {
+      display: flex;
+  }
+}
